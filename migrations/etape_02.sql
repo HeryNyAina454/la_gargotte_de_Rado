@@ -1,6 +1,6 @@
 CREATE TABLE categorie(
     id_categorie serial PRIMARY KEY,
-    nom VARCHAR(50)
+    nom VARCHAR(50) not null
 );
 
 INSERT INTO categorie (nom) VALUES

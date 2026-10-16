@@ -1,6 +1,6 @@
 CREATE TABLE plat(
     id_plat serial PRIMARY KEY,
-    nom VARCHAR(50),
+    nom VARCHAR(50) not null,
     prix numeric(10,2) not null
 );
 
