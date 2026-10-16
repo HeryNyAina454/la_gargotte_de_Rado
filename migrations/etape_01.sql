@@ -13,6 +13,5 @@ INSERT INTO plat(id_plat, nom, prix) VALUES
 (6, 'Mofo gasy(les 4)', 1000),
 (7, 'Ranon''ampango', 500);
 
-SELECT * FROM plat ORDER BY prix DESC;
 
 -- Piège: Numeric pour le type prix pour eviter les erreurs d'arrondi au prix et serial pour l'ID car ça auto increment

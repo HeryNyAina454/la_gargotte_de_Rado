@@ -17,10 +17,4 @@ UPDATE plat SET id_categorie = 3 WHERE nom = 'Soupe chinoise';
 UPDATE plat SET id_categorie = 4 WHERE nom = 'Mofo gasy(les 4)';
 UPDATE plat SET id_categorie = 5 WHERE nom = 'Ranon''ampango';
 
-SELECT c.nom as categorie, COUNT(p.id_plat) as nombre_plats
-FROM categorie c
-LEFT JOIN plat p ON c.id_categorie = p.id_categorie
-GROUP BY c.id_categorie, c.nom
-ORDER BY c.id_categorie;
-
 -- Piège: Si on ajoute une colonne catégorie dans la table des plats et que une erreur de frappe s'est produit, la jointure pourrait être fausse
